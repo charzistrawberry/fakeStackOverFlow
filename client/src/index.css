@@ -1,0 +1,255 @@
+/* Add CSS stylesheet */
+.header {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;   
+    background-color: lightgray;
+    border: 2px solid black;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: "bold";
+    height: 8vh;
+}
+
+#author-tag {
+    font-size: 17px;
+}
+#searchbar {
+    margin-left: auto;
+}
+#main-header {
+    color: black;
+    font-size: 18px;
+    font-weight: "bold";
+    border-bottom: 2px dotted #000;
+}
+#main-title {
+    display:flex;
+    align-items: center;
+    margin-bottom: 2%;
+    
+
+}
+#left-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-tab {
+    color: black;
+    background-color: lightgray;
+}
+.sidebar-tab:hover{
+    background-color: gray;
+}
+#ask-question {
+    background-color: rgb(92, 161, 221);
+    color: white;
+    border: 1px solid black;
+    font-size: 18px;
+    height:50px;
+}
+
+.ask-question {
+    background-color: rgb(92, 161, 221);
+    color: white;
+    border: 1px solid black;
+    font-size: 18px;
+    height:50px;
+}
+.ask-question:hover {
+    background-color: rgba(31, 106, 172, 0.848);
+}
+
+#ask-question2 {
+    background-color: rgb(92, 161, 221);
+    color: white;
+    border: 1px black;
+    font-size: 18px;
+    height:50px;
+}
+.ask-question2 {
+    background-color: rgb(92, 161, 221);
+    color: white;
+    border: 1px black;
+    font-size: 18px;
+    height:50px;
+}
+
+.red-username{
+    color: red;
+}
+
+
+#ask-question:hover {
+    background-color: rgba(31, 106, 172, 0.848);
+}
+
+#ask-question2:hover{
+    background-color: rgba(31, 106, 172, 0.848);
+}
+.sort-button {
+    background-color : white;
+    color: black;
+    border: 1px solid black;
+
+}
+.sort-button:hover {
+    background-color: gray;
+
+}
+.buttons-span{
+    display: flex;
+    flex-direction: row;
+}
+#main {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 20% 80%;
+    /* grid-template-rows: 10% 10% 70% 10%; */
+    margin: auto;
+}
+#main-body {
+    display: flex;
+    flex-direction: row;
+}
+#header{
+    width: 80%;
+    margin: auto;
+}
+#questions-toolbar {
+    display:flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: "bold";
+    margin-bottom: 5%;
+}
+#numOfQuestions {
+    margin-right: 50%;
+}
+.question-card {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 20px;
+    border-bottom: 2px dotted #000;
+    /* border-radius: 25px; */
+}
+
+.answer-question{
+    color: white;
+    background-color: rgb(92, 161, 221);
+}
+
+#question-page-header{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 20px;
+}
+.question-text-card{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 20px;
+    border-bottom: 2px dotted #000;
+
+}
+.answer-card{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 20px; 
+    border-bottom: 2px dotted #000;
+
+}
+
+#answers-cards {
+    display: flex;
+    flex-direction: column;
+    max-height: 70vh; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+    width: 90%;
+
+
+}
+
+#questions-cards {
+    display: flex;
+    flex-direction: column;
+    
+    max-height: 70vh; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+    width: 90%;
+}
+#question-tags {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.tags-span {
+    background-color: rgb(98, 98, 98);
+    color: white;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inactive {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+/* The stuff for the tabs */
+.selected-sidebar-tab, .unselected-sidebar-tab, .sidebar-tab{
+    color: rgb(0, 81, 255);
+    text-align: center;
+    text-align: center;
+    padding: 10%;
+}
+.selected-sidebar-tab{
+    background-color: rgb(189, 189, 189);
+}
+.selected-sidebar-tab:hover{
+    background-color: darkgrey;
+}
+.unselected-sidebar-tab, .sidebar-tab{
+    background-color: grey;
+}
+.sidebar-tab:hover{
+    background-color: darkgrey;
+}
+.sidebar-tab{
+    background-color: white;
+}#left-sidebar {
+    /* NOT SURE IF THIS relative position will be needed */
+    /* position: relative; */
+    border-right: 2px dotted black;
+}
+
+.error-message {
+    color: red;
+}
+#tags-header {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+#tags-header > * {
+    margin: 30px;
+}
+#tag-cards {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+.tag-card{
+    border: 1px dotted black;
+    margin: auto;
+    margin-top: 10%;
+    width:50%;
+
+}
+
+/* NOTE overflow: auto might be needed for scrollbaring for question cards, answer cards etc.*/
